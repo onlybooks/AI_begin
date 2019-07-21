@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="worst radius <= 16.795\nentropy = 0.953\nsamples = 455\nvalue = [170, 285]\nclass = not cancer"] ;
+1 [label="worst concave points <= 0.136\nentropy = 0.433\nsamples = 304\nvalue = [27, 277]\nclass = not cancer"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="area error <= 38.605\nentropy = 0.133\nsamples = 271\nvalue = [5, 266]\nclass = not cancer"] ;
+1 -> 2 ;
+3 [label="entropy = 0.065\nsamples = 259\nvalue = [2, 257]\nclass = not cancer"] ;
+2 -> 3 ;
+4 [label="entropy = 0.811\nsamples = 12\nvalue = [3, 9]\nclass = not cancer"] ;
+2 -> 4 ;
+5 [label="worst texture <= 27.385\nentropy = 0.918\nsamples = 33\nvalue = [22, 11]\nclass = cancer"] ;
+1 -> 5 ;
+6 [label="entropy = 0.982\nsamples = 19\nvalue = [8, 11]\nclass = not cancer"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 14\nvalue = [14, 0]\nclass = cancer"] ;
+5 -> 7 ;
+8 [label="texture error <= 0.473\nentropy = 0.299\nsamples = 151\nvalue = [143, 8]\nclass = cancer"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = not cancer"] ;
+8 -> 9 ;
+10 [label="worst concavity <= 0.191\nentropy = 0.145\nsamples = 146\nvalue = [143, 3]\nclass = cancer"] ;
+8 -> 10 ;
+11 [label="entropy = 0.971\nsamples = 5\nvalue = [2, 3]\nclass = not cancer"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 141\nvalue = [141, 0]\nclass = cancer"] ;
+10 -> 12 ;
+}

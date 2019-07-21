@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_images</folder>
+	<filename>Korean_cuisine-Bibimbap-01.jpg</filename>
+	<path>D:/dev/저서-인공지능/source/object_detect/models/research/object_detection/test_images/Korean_cuisine-Bibimbap-01.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3264</width>
+		<height>2448</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bibimbap</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>60</xmin>
+			<ymin>164</ymin>
+			<xmax>2832</xmax>
+			<ymax>2040</ymax>
+		</bndbox>
+	</object>
+</annotation>
